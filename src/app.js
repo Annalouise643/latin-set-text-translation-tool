@@ -1,11 +1,16 @@
-let sauciaElement = document.querySelector("#saucia");
+function highlight() {
+  let atElement = document.querySelector("#at");
+  let butElement = document.querySelector("#but");
 
-sauciaElement.addEventListener("click", sauciaLookUp);
-
-function sauciaLookUp() {
-  alert("Hello");
-  console.log("test");
+  atElement.style.color = "red";
+  butElement.style.color = "red";
 }
 
+function undoHighlight() {
+  let atElement = document.querySelector("#at");
+  let butElement = document.querySelector("#but");
 
+  atElement.style.color = "black";
+  butElement.style.color = "black";
+}
 
