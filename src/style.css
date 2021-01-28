@@ -16,3 +16,12 @@ h2 {
 a {
   color: black;
 }
+
+.codeLink {
+  text-decoration: underline;
+  color: blue;
+}
+
+.code {
+  font-size: smaller;
+}
