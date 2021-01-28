@@ -14,3 +14,18 @@ function undoHighlight() {
   butElement.style.color = "black";
 }
 
+function highlightTwo() {
+  let reginaElement = document.querySelector("#regina");
+  let queenElement = document.querySelector("#queen");
+
+  reginaElement.style.color = "purple";
+  queenElement.style.color = "purple";
+}
+
+function undoHighlightTwo() {
+  let reginaElement = document.querySelector("#regina");
+  let queenElement = document.querySelector("#queen");
+
+  reginaElement.style.color = "black";
+  queenElement.style.color = "black";
+}
