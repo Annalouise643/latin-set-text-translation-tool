@@ -79,20 +79,20 @@ function undoHighlightPaleBlue() {
 
 function highlightOrange() {
   let curaElement = document.querySelector("#cura");
-  let caresElement = document.querySelector("#cares");
+  let anxietyElement = document.querySelector("#anxiety");
   let withElement = document.querySelector("#with");
 
   curaElement.style.color = "orange";
-  caresElement.style.color = "orange";
+  anxietyElement.style.color = "orange";
   withElement.style.color = "orange";
 }
 
 function undoHighlightOrange() {
   let curaElement = document.querySelector("#cura");
-  let caresElement = document.querySelector("#cares");
+  let anxietyElement = document.querySelector("#anxiety");
   let withElement = document.querySelector("#with");
 
   curaElement.style.color = "black";
-  caresElement.style.color = "black";
+  anxietyElement.style.color = "black";
   withElement.style.color = "black";
 }
