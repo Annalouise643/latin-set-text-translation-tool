@@ -57,7 +57,6 @@ function renderLine(line, lineIdx) {
 
   col3.appendChild(latin);
   col3.appendChild(english);
-
   row.appendChild(col3);
 
   let col = document.createElement("div");
@@ -68,6 +67,10 @@ function renderLine(line, lineIdx) {
     let el = renderSourceWord(word, lineIdx, wordIdx);
     source.appendChild(el);
     source.appendChild(document.createTextNode(" "));
+
+    let br = document.createElement("br");
+      row.appendChild(br);
+
   });
 
   let trans = document.createElement("div");
