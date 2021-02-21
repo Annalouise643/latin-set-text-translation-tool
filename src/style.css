@@ -25,3 +25,8 @@ a {
 .code {
   font-size: smaller;
 }
+
+.line, .code {
+  margin-top: 10px;
+}
+

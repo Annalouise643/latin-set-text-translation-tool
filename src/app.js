@@ -45,9 +45,17 @@ function createTextElement(elementType, text) {
   return el;
 }
 
+/**
+ * render line takes two arguments, 'line' and 'lineIdx'.
+ * line should be an object with property of 'source' and 'trans'.
+ * 'source' should be an array.
+ * 'trans' should also be an array.
+ * 'lineIdx' is just being passed through. 
+ * return a new html element representing one row, which contains two columns, each with two rows of text (contained in divs). 
+ */
 function renderLine(line, lineIdx) {
   let row = document.createElement("div");
-  row.className = "row";
+  row.className = "row line"; 
 
   let col3 = document.createElement("div");
   col3.className = "col-3";
@@ -67,9 +75,6 @@ function renderLine(line, lineIdx) {
     let el = renderSourceWord(word, lineIdx, wordIdx);
     source.appendChild(el);
     source.appendChild(document.createTextNode(" "));
-
-    let br = document.createElement("br");
-      row.appendChild(br);
 
   });
 
@@ -91,6 +96,11 @@ function renderLine(line, lineIdx) {
   return row;
 }
 
+/** 
+render takes one argument, 'data'. 
+'data' should be an object with a property named 'lines'.
+'data.lines' should be an array.
+*/ 
 function render(data) {
   let root = document.createElement("div");
   data.lines.forEach(function (line, lineIdx) {
@@ -105,7 +115,7 @@ function render(data) {
   document.querySelector("#app").appendChild(root);
 }
 
-let data = {
+let theData = {
   lines: [
     {
       source: ["At", "regina", "gravi", "iamdudum", "saucia", "cura"],
@@ -136,4 +146,8 @@ let data = {
   ],
 };
 
-render(data);
+render(theData);
+
+
+
+
