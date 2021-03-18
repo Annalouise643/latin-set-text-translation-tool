@@ -140,6 +140,29 @@ let theData = {
         { phrase: "fire.", sourceIdxs: [6] },
       ],
     },
+    {
+      /*There should be a line break after recursat*/
+      source: [
+        "multa",
+        "viri",
+        "virtus",
+        "animo",
+        "multusque" /*Ideally que highlights separately with que*/,
+        "recursat",
+        "gentis",
+        "honos;",
+      ],
+      trans: [
+        { phrase: "many times", sourceIdxs: [0] },
+        { phrase: "the virtue", sourceIdxs: [2] },
+        { phrase: "of the man", sourceIdxs: [1] },
+        { phrase: "and many times", sourceIdxs: [4] },
+        { phrase: "the honour", sourceIdxs: [7] },
+        { phrase: "of his lineage", sourceIdxs: [6] },
+        { phrase: "kept recurring", sourceIdxs: [5] },
+        { phrase: "in her mind;", sourceIdxs: [3] },
+      ],
+    },
   ],
 };
 
