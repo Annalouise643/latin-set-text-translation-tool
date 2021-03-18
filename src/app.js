@@ -130,11 +130,11 @@ let theData = {
     {
       source: ["vulnus", "alit", "venis", "et", "caeco", "carpitur", "igni."],
       trans: [
-        { phrase: "nourished", sourceIdxs: [1] },
+        { phrase: "nourishes", sourceIdxs: [1] },
         { phrase: "a wound", sourceIdxs: [0] },
         { phrase: "in her veins", sourceIdxs: [2] },
         { phrase: "and", sourceIdxs: [3] },
-        { phrase: "was consumed", sourceIdxs: [5] },
+        { phrase: "is consumed", sourceIdxs: [5] },
         { phrase: "by a", sourceIdxs: [6] },
         { phrase: "hidden", sourceIdxs: [4] },
         { phrase: "fire.", sourceIdxs: [6] },
@@ -154,13 +154,24 @@ let theData = {
       ],
       trans: [
         { phrase: "many times", sourceIdxs: [0] },
-        { phrase: "the virtue", sourceIdxs: [2] },
+        { phrase: "the excellence", sourceIdxs: [2] },
         { phrase: "of the man", sourceIdxs: [1] },
         { phrase: "and many times", sourceIdxs: [4] },
         { phrase: "the honour", sourceIdxs: [7] },
         { phrase: "of his lineage", sourceIdxs: [6] },
-        { phrase: "kept recurring", sourceIdxs: [5] },
+        { phrase: "keep recurring", sourceIdxs: [5] },
         { phrase: "in her mind;", sourceIdxs: [3] },
+      ],
+    },
+    {
+      /* There should be a line break after vultus*/
+      source: ["haerent", "infixi", "pectore", "vultus", "verbaque"],
+      trans: [
+        { phrase: "his face", sourceIdxs: [3] },
+        { phrase: "and his words", sourceIdxs: [4] },
+        { phrase: "are stuck", sourceIdxs: [0] },
+        { phrase: "affixed", sourceIdxs: [1] },
+        { phrase: "in her chest", sourceIdxs: [2] },
       ],
     },
   ],
