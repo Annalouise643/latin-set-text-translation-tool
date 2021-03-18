@@ -1,5 +1,3 @@
-
-
 function highlight(lineIdx, wordIdxs, color) {
   wordIdxs.forEach(function (wordIdx) {
     let els = document.querySelectorAll(`.source-${lineIdx}-${wordIdx}`);
@@ -50,12 +48,12 @@ function createTextElement(elementType, text) {
  * line should be an object with property of 'source' and 'trans'.
  * 'source' should be an array.
  * 'trans' should also be an array.
- * 'lineIdx' is just being passed through. 
- * return a new html element representing one row, which contains two columns, each with two rows of text (contained in divs). 
+ * 'lineIdx' is just being passed through.
+ * return a new html element representing one row, which contains two columns, each with two rows of text (contained in divs).
  */
 function renderLine(line, lineIdx) {
   let row = document.createElement("div");
-  row.className = "row line"; 
+  row.className = "row line";
 
   let col3 = document.createElement("div");
   col3.className = "col-3";
@@ -75,7 +73,6 @@ function renderLine(line, lineIdx) {
     let el = renderSourceWord(word, lineIdx, wordIdx);
     source.appendChild(el);
     source.appendChild(document.createTextNode(" "));
-
   });
 
   let trans = document.createElement("div");
@@ -100,7 +97,7 @@ function renderLine(line, lineIdx) {
 render takes one argument, 'data'. 
 'data' should be an object with a property named 'lines'.
 'data.lines' should be an array.
-*/ 
+*/
 function render(data) {
   let root = document.createElement("div");
   data.lines.forEach(function (line, lineIdx) {
@@ -133,21 +130,17 @@ let theData = {
     {
       source: ["vulnus", "alit", "venis", "et", "caeco", "carpitur", "igni."],
       trans: [
-        {phrase: "nourished", sourceIdxs: [1]},
-        {phrase: "a wound", sourceIdxs: [0]},
-        {phrase: "in her veins", sourceIdxs: [2]},
-        {phrase: "and", sourceIdxs: [3]},
-        {phrase: "was consumed", sourceIdxs: [5]},
-        {phrase: "by a", sourceIdxs: [6]},
-        {phrase: "hidden", sourceIdxs: [4]},
-        {phrase: "fire.", sourceIdxs: [6]}
+        { phrase: "nourished", sourceIdxs: [1] },
+        { phrase: "a wound", sourceIdxs: [0] },
+        { phrase: "in her veins", sourceIdxs: [2] },
+        { phrase: "and", sourceIdxs: [3] },
+        { phrase: "was consumed", sourceIdxs: [5] },
+        { phrase: "by a", sourceIdxs: [6] },
+        { phrase: "hidden", sourceIdxs: [4] },
+        { phrase: "fire.", sourceIdxs: [6] },
       ],
     },
   ],
 };
 
 render(theData);
-
-
-
-
