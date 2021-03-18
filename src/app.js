@@ -60,6 +60,7 @@ function renderLine(line, lineIdx) {
 
   let latin = createTextElement("div", "Latin");
   let english = createTextElement("div", "English");
+  /*English should be italic*/
 
   col3.appendChild(latin);
   col3.appendChild(english);
@@ -123,18 +124,18 @@ let theData = {
         { phrase: "for a long time now", sourceIdxs: [3] },
         { phrase: "with", sourceIdxs: [5] },
         { phrase: "grave", sourceIdxs: [2] },
-        { phrase: "anxiety", sourceIdxs: [5] },
+        { phrase: "anguish", sourceIdxs: [5] },
       ],
     },
 
     {
       source: ["vulnus", "alit", "venis", "et", "caeco", "carpitur", "igni."],
       trans: [
-        { phrase: "nourishes", sourceIdxs: [1] },
+        { phrase: " nourished", sourceIdxs: [1] },
         { phrase: "a wound", sourceIdxs: [0] },
         { phrase: "in her veins", sourceIdxs: [2] },
         { phrase: "and", sourceIdxs: [3] },
-        { phrase: "is consumed", sourceIdxs: [5] },
+        { phrase: "was consumed", sourceIdxs: [5] },
         { phrase: "by a", sourceIdxs: [6] },
         { phrase: "hidden", sourceIdxs: [4] },
         { phrase: "fire.", sourceIdxs: [6] },
@@ -159,7 +160,7 @@ let theData = {
         { phrase: "and many times", sourceIdxs: [4] },
         { phrase: "the honour", sourceIdxs: [7] },
         { phrase: "of his lineage", sourceIdxs: [6] },
-        { phrase: "keep recurring", sourceIdxs: [5] },
+        { phrase: "kept recurring", sourceIdxs: [5] },
         { phrase: "in her mind;", sourceIdxs: [3] },
       ],
     },
@@ -169,9 +170,21 @@ let theData = {
       trans: [
         { phrase: "his face", sourceIdxs: [3] },
         { phrase: "and his words", sourceIdxs: [4] },
-        { phrase: "are stuck", sourceIdxs: [0] },
+        { phrase: "were stuck", sourceIdxs: [0] },
         { phrase: "affixed", sourceIdxs: [1] },
         { phrase: "in her chest", sourceIdxs: [2] },
+      ],
+    },
+    {
+      source: ["nec", "placidam", "membris", "dat", "cura", "quietem."],
+      trans: [
+        { phrase: "and", sourceIdxs: [0] },
+        { phrase: "her anguish", sourceIdxs: [4] },
+        { phrase: "gave", sourceIdxs: [3] },
+        { phrase: "no", sourceIdxs: [0] },
+        { phrase: "calm", sourceIdxs: [1] },
+        { phrase: "rest", sourceIdxs: [5] },
+        { phrase: "to her limbs.", sourceIdxs: [2] },
       ],
     },
   ],
